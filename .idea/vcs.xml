@@ -3,7 +3,9 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/chisel-base/chisel" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/chisel-base/chisel-bench" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/chisel-base/chiselbench" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/chisel-bench" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/chisel-perses-comparison" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/chisel-perses-comparison/chisel-base/chisel" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/chisel-perses-comparison/chisel-base/chiselbench" vcs="Git" />
