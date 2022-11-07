@@ -1,0 +1,3 @@
+[submodule "chisel-base/chisel"]
+	path = chisel-base/chisel
+	url = https://github.com/aspire-project/chisel
