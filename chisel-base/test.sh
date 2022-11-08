@@ -17,22 +17,24 @@ function clean() {
   return 0
 }
 
+function run(){
+        { $ORIGIN_BIN ;} 2> temp.txt
+        var1=$(cat temp.txt)
+        echo $var1
+        if [[ "$var1" == "$var2" ]]; then
+          echo "Strings are equal."
+          return 0
+      else
+          echo "Strings are not equal."
+          return 1
+      fi
+}
 function desired() {
-        var2="Hello World\n"
-#        ls
-#        echo $SRC
-#        ls
-#        clang $SRC
-        $ORIGIN_BIN
-#        { timeout $TIMEOUT $REDUCED_BIN -k foo; } >&$LOG || exit 1
-#        echo $var2
-#        if [ "$var1" = "$var2" ]; then
-#          echo "Up-to-date"
-#          fi
-        # shellcheck disable=SC2046
-#        echo $(test "$REDUCED_BIN" == "$var2")
-#        test $REDUCED_BIN == "Hello World" || exit 1
-#        clang mycode.c.origin.c || "Hello World"
+        rm -rf out1
+        clang mycode.c -o out1
+        ./out1 > temp1
+        cmp temp1 Hello.txt || exit 1
+
         return 0
 }
 
@@ -46,4 +48,5 @@ function desired_disaster() {
   return 1
 }
 
-main
+#main
+desired

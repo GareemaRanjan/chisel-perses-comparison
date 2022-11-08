@@ -2,7 +2,12 @@
 
 int main()
 {
-    printf("Hello World\n");
-    printf("Bye World\n");
+    printf("Hello World");
+    int a=10;
+    int s=0;
+    s=s+a;
+    if (s==-1){
+    printf("Wrong print");
+    }
     return 0;
 }

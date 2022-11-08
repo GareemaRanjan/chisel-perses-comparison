@@ -3,6 +3,10 @@
 int main()
 {
     printf("Hello World");
-    printf("Bye World");
-    return 0;
+    int a=10;
+    int s=0;
+    s=s+a;
+    if (s==-1){
+    printf("Wrong print");
+    }
 }

@@ -26,7 +26,7 @@ RUN mkdir mycode/merged
 WORKDIR mycode/merged
 # RUN mkdir /chiselbench/benchmark/mycode/merged
 # WORKDIR /chiselbench/benchmark/mycode/merged
-COPY Makefile mycode.c mycode.c.origin.c test.sh .
+COPY Makefile mycode.c mycode.c.origin.c test.sh Hello.txt .
 RUN chmod +x test.sh
 COPY start.sh .
 ENTRYPOINT ["sh", "start.sh"]
