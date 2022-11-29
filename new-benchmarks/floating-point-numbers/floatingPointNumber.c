@@ -2,9 +2,7 @@
 
 // C Program to Multiply Two Floating-Point Numbers
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+int printf(const char*, ...);
 
 int main()
 {
@@ -17,3 +15,4 @@ int main()
 
     return 0;
 }
+

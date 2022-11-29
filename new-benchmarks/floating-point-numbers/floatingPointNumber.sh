@@ -1,3 +1,10 @@
+
+#!/usr/bin/env bash
+
+
+set -o nounset
+set -o pipefail
+
 clang floatingPointNumber.c -o floatingPointNumber
 
 readonly EXIT_CODE="$?"
