@@ -13,13 +13,13 @@ readonly CLANG="clang"
 rm -f out*.txt
 
 
-clang reverse.c -o out1
-./out1 hi > temp1.txt
+clang t.c -o out1
+./out1 madam > temp1.txt
 
 readonly EXIT_CODE="$?"
 echo $EXIT_CODE
 # cat temp1.txt
-if [[ "${EXIT_CODE}" == "0" ]] && grep -q "ih" temp1.txt; then
+if [[ "${EXIT_CODE}" == "0" ]] && grep -q "Palindrome" temp1.txt && grep -q "madam" temp1.txt; then
   exit 0
   echo "will I be printed"
 fi

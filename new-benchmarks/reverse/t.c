@@ -47,7 +47,7 @@ int main(int argc, char *argv[])
     int res = compare(org, acData);
     if (res == 0)
     {
-        printf("Palindrome");
+        printf("Palindrome\n");
     }
     printf("\n\nReverse string is : %s\n\n", acData);
     return 0;
