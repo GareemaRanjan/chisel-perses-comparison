@@ -2,17 +2,13 @@
 
 // C Program to Multiply Two Floating-Point Numbers
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-
+int printf(const char *p, ...);
 int main()
 {
     double product;
 
     product = 4 * 3;
 
-    // %.2lf displays number up to 2 decimal point
     printf("Product = %.2lf", product);
 
     return 0;
