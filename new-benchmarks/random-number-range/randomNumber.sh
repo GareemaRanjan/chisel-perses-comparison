@@ -1,3 +1,8 @@
+#!/usr/bin/env bash
+
+
+set -o nounset
+set -o pipefail
 clang randomNumber.c -o randomNumber
 
 readonly EXIT_CODE="$?"

@@ -15,7 +15,7 @@ readonly CLANG="clang"
 rm -f out*.txt
 
 
-clang dec2bin.c -o out1
+clang t.c -o out1
 ./out1 > temp1-dec2bin.txt
 
 readonly EXIT_CODE="$?"
