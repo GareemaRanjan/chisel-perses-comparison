@@ -1,4 +1,4 @@
-Benchmarks,Original Size(Tokens),Reduced Size(Tokens),Original Size(Lines of Code),Size (Lines of Code),Success/Failure,Time -Run1,Time -Run2,Time -Run3	
+Benchmarks,Original Size(Lines of Code),Size (Lines of Code),Success/Failure,Time -Run1,Time -Run2,Time -Run3	
 calculator,31,18,YES,1.1,1.1,1	
 compare-strings,28,15,YES,1.8,1.8,1.7	
 complex,28,8,YES,1.3,1.3,1.3	
