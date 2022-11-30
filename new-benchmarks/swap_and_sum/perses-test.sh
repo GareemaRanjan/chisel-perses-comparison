@@ -15,15 +15,15 @@ readonly CLANG="clang"
 rm -f out*.txt
 
 
-clang swap.c -o out1
+clang t.c -o out1
 ./out1 > temp1.txt
 
 readonly EXIT_CODE="$?"
 echo $EXIT_CODE
 # cat temp1.txt
 if [[ "${EXIT_CODE}" == "15" ]] ; then
-  exit 0
-  echo "will I be printed"
+ exit 0
+ echo "will I be printed"
 fi
 
 # if grep -q "hello" temp1.txt ; then

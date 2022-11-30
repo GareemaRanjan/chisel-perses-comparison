@@ -1,9 +1,11 @@
+
 #!/usr/bin/env bash
 
 
 set -o nounset
 set -o pipefail
-clang randomNumber.c -o randomNumber
+
+clang t.c -o floatingPointNumber
 
 readonly EXIT_CODE="$?"
 
