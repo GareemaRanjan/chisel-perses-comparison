@@ -13,17 +13,15 @@ readonly CLANG="clang"
 rm -f out*.txt
 
 
-clang reverse.c -o out1
-./out1 hi > temp1.txt
+clang t.c -o out1
+./out1 hi hi > temp1.txt
+./out1 hello bye > temp2.txt
 
 readonly EXIT_CODE="$?"
 echo $EXIT_CODE
 # cat temp1.txt
-if [[ "${EXIT_CODE}" == "0" ]] && grep -q "ih" temp1.txt; then
-  exit 0
-  echo "will I be printed"
+if [[ "${EXIT_CODE}" == "0" ]] && grep -q "EQUAL" temp1.txt && grep -q "First" temp2.txt; then
+ exit 0
+ echo "will I be printed"
 fi
-
-
-exit 1
 

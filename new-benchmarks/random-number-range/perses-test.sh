@@ -1,11 +1,9 @@
-
 #!/usr/bin/env bash
 
 
 set -o nounset
 set -o pipefail
-
-clang floatingPointNumber.c -o floatingPointNumber
+clang t.c -o out1
 
 readonly EXIT_CODE="$?"
 
